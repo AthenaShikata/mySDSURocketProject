@@ -9,13 +9,22 @@ services:
   nextcloud-app:
     image: nextcloud:latest
     container_name: nextcloud_app
-    restart: #set as unless-stopped, always, or never (don't do never)
+    restart: #set as unless-stopped, always, or never 
+    #(don't do never unless you have a good reason)
     ports:
-      - :80 #set a local port (above 2000 is recommended cuz below that gets used more often)
+      - :80 #set a local port (above 2000 is recommended 
+      #cuz below that gets used more often)
     volumes:
-      - :/var/www/html #set a local directory recommended to make a folder in the working directory of this file and a different folder for each service
+      - :/var/www/html 
+      #set a local directory. recommended to 
+      #make a folder in the working directory of this file 
+      #and a different folder for each service
+      #i recommend naming these folder after the service
+      
     environment:
-      - MYSQL_PASSWORD= #set a password (none of these ar important as long as the passwords and usernames are all the same)
+      - MYSQL_PASSWORD= #set a password (none of these ar 
+      #important as long as the passwords and usernames 
+      #are all the same)
       - MYSQL_DATABASE=nextcloud
       - MYSQL_USER= #set a username
       - MYSQL_HOST=nextcloud-db
