@@ -1,0 +1,8 @@
+install rasbian with raspberry pi imager
+boot raspberry pi
+top left pi logo icon > preferences > raspberry pi config
+interfaces > ssh on + vnc on
+open terminal and run commands
+wget https://github.com/AthenaShikata/mySDSURocketProject/raw/refs/heads/main/2024-04-20_Linux_Workshop/linux_workshop_installer.sh
+sudo chmod 777 ./linux_workshop_installer
+sudo ./linux_workshop_installer

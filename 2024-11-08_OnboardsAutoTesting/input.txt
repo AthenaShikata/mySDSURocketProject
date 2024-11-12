@@ -1,0 +1,8 @@
+Ch1V: 10.0 V
+Ch1I: 0.5A
+Ch2V: 0V
+Ch2I: 0A
+random garbage
+trash
+aaaaaaaa
+Time: 10s
