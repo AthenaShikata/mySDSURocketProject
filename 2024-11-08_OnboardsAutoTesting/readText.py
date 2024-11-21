@@ -12,6 +12,8 @@ def parseForDouble(value, toReplace, toCheck):
     elif(toCheck == "min"):
         if("min" in value): #minutes
             newDouble = newDouble * 60
+        elif("hr" or "hrs" in value): #hours
+            newDouble = newDouble * 60 * 60
         elif("ms" in value): #milliseconds
             newDouble = newDouble / 1000
     return newDouble
@@ -46,9 +48,9 @@ def read (file_path):
     return Ch1VDouble, Ch1IDouble, Ch2VDouble, Ch2IDouble, TimeDouble
     
 #main
-#Ch1V, Ch1I, Ch2V, Ch2I, time = read("input.txt")
-#print("Ch1V: " + str(Ch1V))
-#print("Ch1I: " + str(Ch1I))
-#print("Ch2V: " + str(Ch2V))
-#print("Ch2I: " + str(Ch2I))
-#print("Time: " + str(time))
+Ch1V, Ch1I, Ch2V, Ch2I, time = read("input.txt")
+print("Ch1V: " + str(Ch1V))
+print("Ch1I: " + str(Ch1I))
+print("Ch2V: " + str(Ch2V))
+print("Ch2I: " + str(Ch2I))
+print("Time: " + str(time))

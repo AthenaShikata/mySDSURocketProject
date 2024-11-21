@@ -10,4 +10,5 @@ wget https://raw.githubusercontent.com/AthenaShikata/mySDSURocketProject/refs/he
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get autoremove -y
+sudo tailscale up
 read -p "- Press Return to exit..." _
